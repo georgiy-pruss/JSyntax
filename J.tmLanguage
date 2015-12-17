@@ -14,6 +14,14 @@
     <array>
         <dict>
             <key>name</key>
+            <string>name.j</string>
+
+            <key>match</key>
+            <string>[a-zA-Z][a-zA-Z0-_]*</string>
+        </dict>
+
+        <dict>
+            <key>name</key>
             <string>string.j</string>
 
             <key>match</key>
@@ -25,7 +33,7 @@
             <string>constant.numeric.j</string>
 
             <key>match</key>
-            <string>(_?\d*\.?\d+)</string>
+            <string>(_?\d[a-z0-9_.]*)</string>
         </dict>
 
         <dict>
@@ -57,7 +65,7 @@
             <string>keyword.j</string>
 
             <key>match</key>
-            <string>(?:^|(?&lt;=[) ]))((?:while\.)|(?:whilst\.)|(?:if\.)|(?:elseif\.)|(?:else\.)|(?:do\.)|(?:end\.))</string>
+            <string>(?:^|(?&lt;=[) ]))((?:goto_[A-Za-z0-9]+\.)|(?:label_[A-Za-z0-9]+\.)|(?:for\.)|(?:for_[A-Za-z0-9]+\.)|(?:try\.)|(?:catch\.)|(?:catcht\.)|(?:catchd\.)|(?:throw\.)|(?:select\.)|(?:case\.)|(?:assert\.)|(?:return\.)|(?:continue\.)|(?:break\.)|(?:while\.)|(?:whilst\.)|(?:if\.)|(?:elseif\.)|(?:else\.)|(?:do\.)|(?:end\.))</string>
         </dict>
 
         <dict>
